@@ -2,6 +2,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
 
+
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
     private readonly string gameVersion = "1";
@@ -58,11 +59,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         connectionInfoText.text = "Connected with Room.";
         PhotonNetwork.LoadLevel("Main");
-    }
-
-  
-    void Update()
-    {
-        
+    
     }
 }
